@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="container ">
+    <form method="post">
+      <div class="imgcontainer">
+        <img class="img-color" src="logo.png" alt="Avatar" class="avatar">
+        <div> Log-in to your account </div>
+
+
+
+      </div>
+      <div class="login-inbox">
+      
+      <!-- User Name -->
+      <div class="container-boxinput">
+        <div class="form-item " id="form-item-username" onclick="highlightInput(this)">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="userName"  placeholder="E-mail address" name="uname"  >
+        </div>
+        <!-- Password -->
+        <div class="form-item" id="form-item-password"  onclick="highlightInput(this)">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="passWord" placeholder="Password" name="psw"  >
+        </div>
+
+
+
+        <button class="bt-submit" type="submit" onclick="login(event)">Login</button>
+      </div>
+
+
+
+    </form>
+    
+
+   
+<div class="alert-container" id="alert-container">
+  <ul>
+    <li class="item-alert" id="alert-input-email">Please enter your e-mail</li>
+    <li class="item-alert" id="alert-check-email">Please enter a valid e-mail</li>
+    <li class="item-alert" id="alert-input-password">Please enter your password</li>
+    <li class="item-alert" id="alert-check-password">Your password must be at least 6 characters</li>
+  </ul>
+</div>
+    <div style="background-color:#f1f1f1"></div>
+    <div class="sig-contener">
+      <small>New to user ?</small>
+      <a href="#">Sign Up</a>
+    </div>
+
+  </div>
+  </div>
+
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
